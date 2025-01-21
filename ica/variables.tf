@@ -3,6 +3,7 @@
 #------------------------------------------------------------------------------
 locals {
   default_10y_in_sec = 315576000
+  default_5y_in_sec  = 157788000
   default_2y_in_sec  = 63115200
   default_1hr_in_sec = 3600
 }
@@ -53,6 +54,12 @@ variable "province" {
   nullable    = false
 }
 
+variable "domain" {
+  type        = string
+  description = "Domain permiteed for the certificate"
+  nullable    = false
+}
+
 variable "ica1_common_name" {
   type        = string
   description = "Common name for Intermediate CA1"
@@ -67,7 +74,7 @@ variable "ica1_chain_file_name" {
 
 variable "ica1_key_bits" {
   type        = number
-  description = "Key bits"
+  description = "Key bits for Intermediate CA1"
   nullable    = false
 }
 
@@ -91,7 +98,7 @@ variable "ica2_common_name" {
 
 variable "ica2_key_bits" {
   type        = number
-  description = "Key bits"
+  description = "Key bits for Intermediate CA2"
   nullable    = false
 }
 
@@ -105,4 +112,10 @@ variable "intermediate_ca2" {
   type        = bool
   description = "Intermediate CA2"
   default     = false
+}
+
+variable "cert_key_bits" {
+  type        = number
+  description = "Key bits for certificate"
+  nullable    = false
 }

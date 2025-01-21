@@ -21,9 +21,11 @@ org_unit             = "${ORG_UNIT}"
 country              = "${COUNTRY}"
 locality             = "${LOCALITY}"
 province             = "${PROVINCE}"
+domain               = "${PERMIT_DOMAIN}"
 ica1_key_bits        = ${ICA1_KEY_SIZE}
 ica2_key_bits        = ${ICA2_KEY_SIZE}
 ica1_chain_file_name = "${ICA1_CHAIN_FILE_NAME}"
+cert_key_bits        = ${CERT_KEY_SIZE}
 EOF
 
 # Inicializar terraform
