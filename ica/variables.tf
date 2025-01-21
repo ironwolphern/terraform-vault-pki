@@ -62,7 +62,7 @@ variable "domain" {
 
 variable "ica1_common_name" {
   type        = string
-  description = "Common name for Intermediate CA1"
+  description = "Common name of Intermediate CA1"
   nullable    = false
 }
 
@@ -74,13 +74,13 @@ variable "ica1_chain_file_name" {
 
 variable "ica1_key_bits" {
   type        = number
-  description = "Key bits for Intermediate CA1"
+  description = "Key bits of Intermediate CA1"
   nullable    = false
 }
 
 variable "ica1_mount_path" {
   type        = string
-  description = "Vault PKI mount path for Intermediate CA1"
+  description = "Vault PKI mount path of Intermediate CA1"
   nullable    = false
 }
 
@@ -92,19 +92,19 @@ variable "ica1_sign_intermediate_ca" {
 
 variable "ica2_common_name" {
   type        = string
-  description = "Common name for Intermediate CA1"
+  description = "Common name of Intermediate CA1"
   nullable    = false
 }
 
 variable "ica2_key_bits" {
   type        = number
-  description = "Key bits for Intermediate CA2"
+  description = "Key bits of Intermediate CA2"
   nullable    = false
 }
 
 variable "ica2_mount_path" {
   type        = string
-  description = "Vault PKI mount path for Intermediate CA1"
+  description = "Vault PKI mount path of Intermediate CA1"
   nullable    = false
 }
 
@@ -116,6 +116,6 @@ variable "intermediate_ca2" {
 
 variable "cert_key_bits" {
   type        = number
-  description = "Key bits for certificate"
+  description = "Key bits of certificate"
   nullable    = false
 }
